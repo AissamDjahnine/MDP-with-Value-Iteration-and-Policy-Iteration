@@ -43,7 +43,7 @@ Note: in this code , we will note treat this algorithm ( we will poste it later 
   
 System       | Utilities    |   Optimal politique             
 :-----------:|:------------:|:------------------------:
-<img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./BFS.jpg" width="250"> |  <img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./DFS.jpg" width="250"> | <img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./Astareuc.jpg" width="250"> |   
+<img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./System.jpg" > |  <img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./UtilitiesValues.jpg" > | <img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./OptimalPolitique.jpg"> |   
 
 
 ## Authors
