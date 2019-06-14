@@ -7,19 +7,17 @@ A Markov decision process (MDP) is a discrete time stochastic control process. I
 which is also called backward induction, the π function is not used; instead, the value of π ( s ) is calculated within V(s) whenever it is needed. Substituting the calculation of π ( s ) into the calculation of V(s) gives the combined step.
 
 **Algorithm :**
-<img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./valueiteralgorithm.png" width="25">
+<img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./valueiteralgorithm.png" >
 
 **Policy iteration** :
 In policy iteration (Howard 1960), step one is performed once, and then step two is repeated until it converges. Then step one is again performed once and so on.
 Policy iteration is usually slower than value iteration for a large number of possible states. 
 
 **Algorithm :**
-<img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./politiqueiteralgorithm.png" width="25">
-## References : 
-  - Patel, A. Introduction to A*. Retrieved April 29, 2016
-  - [TutorialsPoint](https://www.tutorialspoint.com/artificial_intelligence/artificial_intelligence_popular_search_algorithms.htm)
-     
-   
+<img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./politiqueiteralgorithm.png">
+
+Note: in this code , we will note treat this algorithm ( we will poste it later ) 
+
 ## Getting Started & Prerequisites :
 
 **Matlab Versions and Libraries :** 
@@ -29,37 +27,29 @@ Policy iteration is usually slower than value iteration for a large number of po
 * No Matlab toolboxes should be required for this program. 
 
 **Functions Provided :** 
-   * You find different functions to create the scenario and display the path estimated withing the search functions ( No modify needed however You're free to add some features ) : 
-       - [CreateScenario](https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/CreateScenario.m),[DisplayScenario](https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/DisplayScenario.m) : Create the scenario as a map.We first select the **TARGET** node, then the **Obstacles** ( follow instructions ) and finely the **START** node .See figure
-       
-       
-Target Node        |    Obstacles         |      Start Node        
-:-----------------:|:--------------------:|:-------------------:
-<img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./target.jpg" width="250"> |  <img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./obstacle.jpg" width="250"> | <img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./start.jpg" width="250">
-
- - [AnimatePath](https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/filesAnimatePath.m) : Display the founded path on the scenario
- - [Matrix2List](https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/Matrix2List.m) : Converts an incident matrix to an incident list
- - [IncidentMatrix](https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/IncidentMatrix.m) : This function creates the incident matrix based on the scneario defined on the graphical interface form script main.m
- - [IncidentList](https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/IncidentList.m) : This function creates the incident List based on the scneario defined on the graphical interface form script main.m
- - [IncidentMatrix2](https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/IncidentMatrix2.m) , [IncidentList2](https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/IncidentList2.m) :same functions as above but uses irregular costs , check [update_nodes](https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/Updates_Nodes.m).
-      
-           
+   * You find different functions to create the scenario and display the :**Utilities,Rewards and Politique** estimated withing the valute iteration algorithm ( No modify needed , however You're free to add some features ) : 
+   
+ - [ ValueIteration ]() : Value iteration algorithm.
+ - [NeighboursSearch]() : Searhc the possible neighbours for each case.
+ - [DisplayUtilities]() : Display utility values on the grid.
+ - [ DisplayReward  ]() : Diplay award values on the grid.
+ - [DisplayPolitique]() : Display the optimal politique.
+ 
+ Also you find some of the variables as : **Escompte factor** , **precision** that you can search for more details .
+ 
 ## Execution & tests : 
-   In the figure below , you find an examlpe of the different algorithms : BFS,DFS,A*( euclidian distance , manhattan distance and Variable Costs ) .
 
-Test the code with your own positions of the : target,Start and obsctacles nodes .
-
-
-BFS       | DFS    |  A* (Euclidian distance) | A* (Manhattan distance) | A*(Variable Cost)            
-:--------:|:------:|:------------------------:|:-----------------------:|:----------------:
-<img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./BFS.jpg" width="250"> |  <img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./DFS.jpg" width="250"> | <img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./Astareuc.jpg" width="250"> | <img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./Astarmann.jpg" width="250"> | <img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/Astarvariab.jpg" width="250">  
-
-**Codes and simulations in Python will be provided soon**
+   In the figures below , you find an examlpe of the applicaiton of the value iteration algorithm : **Utility , Rewards and optimal politique values**
+  
+System       | Utilities    |   Optimal politique             
+:-----------:|:------------:|:------------------------:
+<img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./BFS.jpg" width="250"> |  <img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./DFS.jpg" width="250"> | <img src="https://github.com/AissamDjahnine/Search-Algorithms-in-AI/blob/master/files./Astareuc.jpg" width="250"> |   
 
 
 ## Authors
 
 **Djahnine Aissam**  
+
 - [Github Profile](https://github.com/AissamDjahnine)
 - [Linkedin Profile](https://www.linkedin.com/in/aissamdjahnine/)
 
