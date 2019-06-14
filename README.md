@@ -8,21 +8,25 @@ which is also called backward induction, the π function is not used; instead, t
 
 Look below for an example on how to compute utilites ( for more detaild , see the code in - [ ValueIteration ](https://github.com/AissamDjahnine/markov-decision-process/blob/master/ValueIteration.m) )
 **Algorithm :**
-<img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./valueiteralgorithm.png" >
+<p align="center">
+ <img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./valueiteralgorithm.png" >
+</p>
 
 **Policy iteration** :
 In policy iteration (Howard 1960), step one is performed once, and then step two is repeated until it converges. Then step one is again performed once and so on.
 Policy iteration is usually slower than value iteration for a large number of possible states. 
 
 **Algorithm :**
+<p align="center">
 <img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./politiqueiteralgorithm.png">
+</p>
 
 Note: in this code , we will note treat this algorithm ( we will poste it later ) 
 
 ## Canonical Example: Grid World
-
+<p align="center">
 <img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./Example.jpg" >
-
+</p>
 - The agent (the robot) lives in a grid.
 - Walls block the agent’s path.
 - The agent’s actions do not always go as planned :
@@ -36,9 +40,9 @@ A policy π gives an action for each state for each time
 An optimal policy maximizes expected sum of rewards 
 
 **Example how to calculate the utilities : 
-
+<p align="center">
 <img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./ExampleUtilities.jpg" >
-
+</p>
 **Contrast** : In deterministic, want an optimal plan, or sequence of actions, from start to a goal
 
 ## Getting Started & Prerequisites :
@@ -64,7 +68,11 @@ An optimal policy maximizes expected sum of rewards
 ## Execution & tests : 
 
    In the figures below , you find an examlpe of the applicaiton of the value iteration algorithm : **Utility , Rewards and optimal politique values**
-  
+<p align="center">
+   Initial values of rewards ( You can change the values to test many scenarios )
+ <img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./InitialRewards.jpg" width =366 >
+</p>
+
 Utilities    |   Optimal politique             
 :------------:|:------------------------:
 <img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./UtilitiesValues.jpg" > | <img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./OptimalPolitiquee.jpg">    
