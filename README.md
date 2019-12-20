@@ -21,7 +21,7 @@ Policy iteration is usually slower than value iteration for a large number of po
 <img src="https://github.com/AissamDjahnine/markov-decision-process/blob/master/files./politiqueiteralgorithm.png">
 </p>
 
-Note: in this code , we will note treat this algorithm ( we will poste it later ) 
+Note: in this code , we will not treat this algorithm ( we will poste it later ) 
 
 ## Canonical Example: Grid World
 <p align="center">
